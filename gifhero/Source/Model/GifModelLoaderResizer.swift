@@ -66,13 +66,14 @@ extension GifModelLoader
         {
             return
         }
-        
-        resizeImageRect(image:image, view:view)
+        DispatchQueue.main.async { [weak self] in
+            self?.resizeImageRect(image:image, view:view)
+        }
     }
     
     private func resizeImageRect(image:CGImage, view:GifView)
     {
-        let contentMode:UIViewContentMode = view.contentMode
+        let contentMode:UIView.ContentMode = view.contentMode
         let constraintSize:CGSize = view.bounds.size
         
         let resizingRect:CGRect = resizeRectFor(
@@ -86,7 +87,7 @@ extension GifModelLoader
     }
     
     private func resizeRectFor(
-        contentMode:UIViewContentMode,
+        contentMode:UIView.ContentMode,
         constraintSize:CGSize,
         image:CGImage) -> CGRect
     {

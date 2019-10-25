@@ -16,7 +16,7 @@ open class GifView:UIView
         isUserInteractionEnabled = false
         translatesAutoresizingMaskIntoConstraints = false
         backgroundColor = UIColor.clear
-        contentMode = UIViewContentMode.scaleAspectFill
+        contentMode = UIView.ContentMode.scaleAspectFill
         
         factoryImage()
         strategyStand()

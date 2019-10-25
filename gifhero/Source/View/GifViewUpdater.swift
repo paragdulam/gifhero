@@ -21,7 +21,7 @@ extension GifView
     
     //MARK: selectors
     
-    func selectorUpdate(
+    @objc func selectorUpdate(
         sender displayLink:CADisplayLink)
     {
         let timestamp:TimeInterval = displayLink.timestamp
@@ -40,7 +40,7 @@ extension GifView
             selector:#selector(selectorUpdate(sender:)))
         displayLink.add(
             to:RunLoop.main,
-            forMode:RunLoopMode.commonModes)
+            forMode:RunLoop.Mode.common)
         self.displayLink = displayLink
     }
     

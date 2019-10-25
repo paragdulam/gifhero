@@ -5,7 +5,7 @@ extension CGSize
     public func fittingRectFor(
         width:CGFloat,
         height:CGFloat,
-        contentMode:UIViewContentMode) -> CGRect
+        contentMode:UIView.ContentMode) -> CGRect
     {
         let ratioWidth:CGFloat = width / self.width
         let ratioHeight:CGFloat = height / self.height
@@ -33,7 +33,7 @@ extension CGSize
     //MARK: private
     
     private func ratioFor(
-        contentMode:UIViewContentMode,
+        contentMode:UIView.ContentMode,
         ratioA:CGFloat,
         ratioB:CGFloat) -> CGFloat
     {

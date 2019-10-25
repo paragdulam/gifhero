@@ -7,7 +7,7 @@ class ModelFit:ModelProtocol
     func factoryGif() -> GifView
     {
         let view:GifView = GifView()
-        view.contentMode = UIViewContentMode.scaleAspectFit
+        view.contentMode = UIView.ContentMode.scaleAspectFit
         view.gifNamed = kGifName
         
         return view

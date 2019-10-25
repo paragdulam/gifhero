@@ -20,7 +20,7 @@ extension GifView
         super.layoutSubviews()
     }
     
-    override open var contentMode:UIViewContentMode
+    override open var contentMode:UIView.ContentMode
     {
         didSet
         {

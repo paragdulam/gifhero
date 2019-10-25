@@ -7,7 +7,7 @@ extension GifView
         let imageView:UIImageView = UIImageView()
         imageView.isUserInteractionEnabled = false
         imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.contentMode = UIViewContentMode.center
+        imageView.contentMode = UIView.ContentMode.center
         imageView.clipsToBounds = true
         self.imageView = imageView
         
@@ -15,37 +15,37 @@ extension GifView
         
         NSLayoutConstraint(
             item:imageView,
-            attribute:NSLayoutAttribute.top,
-            relatedBy:NSLayoutRelation.equal,
+            attribute:NSLayoutConstraint.Attribute.top,
+            relatedBy:NSLayoutConstraint.Relation.equal,
             toItem:self,
-            attribute:NSLayoutAttribute.top,
+            attribute:NSLayoutConstraint.Attribute.top,
             multiplier:1,
             constant:0).isActive = true
         
         NSLayoutConstraint(
             item:imageView,
-            attribute:NSLayoutAttribute.bottom,
-            relatedBy:NSLayoutRelation.equal,
+            attribute:NSLayoutConstraint.Attribute.bottom,
+            relatedBy:NSLayoutConstraint.Relation.equal,
             toItem:self,
-            attribute:NSLayoutAttribute.bottom,
+            attribute:NSLayoutConstraint.Attribute.bottom,
             multiplier:1,
             constant:0).isActive = true
         
         NSLayoutConstraint(
             item:imageView,
-            attribute:NSLayoutAttribute.left,
-            relatedBy:NSLayoutRelation.equal,
+            attribute:NSLayoutConstraint.Attribute.left,
+            relatedBy:NSLayoutConstraint.Relation.equal,
             toItem:self,
-            attribute:NSLayoutAttribute.left,
+            attribute:NSLayoutConstraint.Attribute.left,
             multiplier:1,
             constant:0).isActive = true
         
         NSLayoutConstraint(
             item:imageView,
-            attribute:NSLayoutAttribute.right,
-            relatedBy:NSLayoutRelation.equal,
+            attribute:NSLayoutConstraint.Attribute.right,
+            relatedBy:NSLayoutConstraint.Relation.equal,
             toItem:self,
-            attribute:NSLayoutAttribute.right,
+            attribute:NSLayoutConstraint.Attribute.right,
             multiplier:1,
             constant:0).isActive = true
     }

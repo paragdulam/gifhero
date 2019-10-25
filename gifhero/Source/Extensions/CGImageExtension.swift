@@ -4,7 +4,7 @@ extension CGImage
 {
     open func resizeToFit(
         targetSize:CGSize,
-        contentMode:UIViewContentMode) -> CGImage?
+        contentMode:UIView.ContentMode) -> CGImage?
     {
         let width:CGFloat = CGFloat(self.width)
         let height:CGFloat = CGFloat(self.height)

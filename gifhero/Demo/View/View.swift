@@ -16,7 +16,7 @@ class View:UIView
         let screenWidth:CGFloat = screenBounds.width
         
         let flow:UICollectionViewFlowLayout = UICollectionViewFlowLayout()
-        flow.scrollDirection = UICollectionViewScrollDirection.vertical
+        flow.scrollDirection = UICollectionView.ScrollDirection.vertical
         flow.headerReferenceSize = CGSize.zero
         flow.footerReferenceSize = CGSize.zero
         flow.minimumLineSpacing = kCollectionInterItemSpace
